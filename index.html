@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="photo/png" href="data:image/png;base64,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">
+</head>
+<body>
+
+   <div class="carousel">
+        <div class="image-container" id="imgs">
+            <img src="https://cdn.wallpapersafari.com/77/40/p0mGd9.jpg" alt="1st img">
+            <img src="https://images8.alphacoders.com/100/1005830.jpg" alt="2nd img">
+            <img src="https://wallpapercave.com/wp/wp8144234.jpg" alt="3rd img">
+            <img src="https://wallpaperaccess.com/full/5252295.jpg" alt="4th img">
+        </div>
+        
+        <div class="buttons-container">
+            <button class="btn" id="left">Left</button>
+            <button class="btn" id="right">Right</button>
+        </div>       
+   </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

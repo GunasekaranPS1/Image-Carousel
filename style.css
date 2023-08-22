@@ -1,0 +1,57 @@
+
+* {
+    box-sizing: border-box;
+    background-color: rgb(21, 102, 179);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+img {
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}
+
+.carousel {
+    height: 560px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0s ease-in-out;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 13px;
+}
+.btn {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 15px;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: large;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+.btn:focus {
+    outline: none;
+}
